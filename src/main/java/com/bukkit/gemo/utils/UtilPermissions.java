@@ -1,15 +1,10 @@
 package com.bukkit.gemo.utils;
 
 import com.bukkit.gemo.FalseBook.Core.FalseBookCore;
-import com.bukkit.gemo.utils.Permissions.AnjoPermissions;
-import com.bukkit.gemo.utils.Permissions.BukkitPermissions;
 import com.bukkit.gemo.utils.Permissions.IPermissions;
-import com.bukkit.gemo.utils.Permissions.NijiPermissions;
 import com.bukkit.gemo.utils.Permissions.NoPermissions;
 import com.bukkit.gemo.utils.Permissions.PEXPermissions;
 import com.bukkit.gemo.utils.Permissions.System.FBPermissionHandler;
-import com.bukkit.gemo.utils.Permissions.VaultPermissions;
-import com.bukkit.gemo.utils.Permissions.bPermissions;
 import java.util.List;
 import org.bukkit.Server;
 import org.bukkit.World;
@@ -53,40 +48,13 @@ public class UtilPermissions
   private static boolean getSecurityPlugin()
   {
     permissions = new NoPermissions();
-    if (getPlugin("Vault", false) != null) {
-      permissions = new VaultPermissions();
-      FalseBookCore.printInConsole("using Vault for Permissions!");
-      return true;
-    }if (getPlugin("PermissionsBukkit", false) != null) {
-      permissions = new BukkitPermissions();
-      FalseBookCore.printInConsole("using PermissionsBukkit for Permissions!");
-      return true;
-    }if (getPlugin("PermissionsEx", false) != null) {
+
+    if (getPlugin("PermissionsEx", false) != null) {
       permissions = new PEXPermissions();
       FalseBookCore.printInConsole("using PermissionsEx for Permissions!");
       return true;
-    }if (getPlugin("GroupManager", true) != null) {
-      Plugin plugin = getPlugin("GroupManager", true);
-      if (plugin.getDescription().getVersion().startsWith("1.0")) {
-        permissions = new AnjoPermissions();
-        FalseBookCore.printInConsole("using GroupManager for Permissions!");
-      }
-      else if (getPlugin("Permissions", true) != null) {
-        permissions = new NijiPermissions();
-        FalseBookCore.printInConsole("using GroupManager-Permissions!");
-        return true;
-      }
-
-      return true;
-    }if (getPlugin("Permissions", true) != null) {
-      permissions = new NijiPermissions();
-      FalseBookCore.printInConsole("using Permissionsplugin Permissions!");
-      return true;
-    }if (getPlugin("bPermissions", false) != null) {
-      permissions = new bPermissions();
-      FalseBookCore.printInConsole("using bPermissions for Permissions!");
-      return true;
     }
+    
     return false;
   }
 
