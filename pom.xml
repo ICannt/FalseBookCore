@@ -62,6 +62,14 @@
                     <include>plugin.yml</include>
                 </includes>
             </resource>
+			<resource>
+                <targetPath>.</targetPath>
+                <filtering>false</filtering>
+                <directory>${basedir}/src/main/resources/</directory>
+                <includes>
+                    <include>COPYING.txt</include>
+                </includes>
+            </resource>
         </resources>
 
 <!-- Plugins -->
