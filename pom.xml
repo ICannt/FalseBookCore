@@ -23,7 +23,7 @@
         </repository>
         <repository>
             <id>pex-repo</id>
-            <url>http://repo.tehkode.ru/repository/repo</url>
+            <url>http://repo.tehkode.ru/repository/bukkit-plugins</url>
         </repository>
         <repository>
             <id>bukkit-repo</id>
