@@ -18,7 +18,7 @@
 	<repositories>
 		<repository>
 			<id>icannt-repo</id>
-			<url>http://mc.icannt.org/</url>
+			<url>http://mc.icannt.org:8080/plugin/repository/everything/</url>
 		</repository>
 		<repository>
 			<id>bukkit-repo</id>
@@ -27,11 +27,15 @@
 	</repositories>
 
 	<dependencies>
-		<!-- Bukkit -->
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>1.1-R6</version>
+			<version>1.2.3-R0.2-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bukkit</groupId>
+			<artifactId>craftbukkit</artifactId>
+			<version>1.2.3-R0.2-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
