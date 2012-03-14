@@ -1,36 +1,33 @@
 package com.bukkit.gemo.FalseBook.Values;
 
-public class ValueDouble
-{
-  private String name;
-  private double value;
+public class ValueDouble {
 
-  public ValueDouble(String name, double value)
-  {
-    this.name = name;
-    this.value = value;
-  }
+    private String name;
+    private double value;
 
-  public ValueDouble(Integer name, double value)
-  {
-	this.name = name.toString();
-    this.value = value;
-  }
+    public ValueDouble(String name, double value) {
+        this.name = name;
+        this.value = value;
+    }
 
-public String getName() {
-    return this.name;
-  }
+    public ValueDouble(Integer name, double value) {
+        this.name = name.toString();
+        this.value = value;
+    }
 
-  public double getValue() {
-    return this.value;
-  }
+    public String getName() {
+        return this.name;
+    }
 
-  public void setValue(double value) {
-    this.value = value;
-  }
+    public double getValue() {
+        return this.value;
+    }
 
-  public String toString()
-  {
-    return String.valueOf(this.value);
-  }
+    public void setValue(double value) {
+        this.value = value;
+    }
+
+    public String toString() {
+        return String.valueOf(this.value);
+    }
 }

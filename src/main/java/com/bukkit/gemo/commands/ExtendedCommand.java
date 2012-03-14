@@ -4,36 +4,33 @@ import com.bukkit.gemo.utils.ChatUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
-public abstract class ExtendedCommand extends Command
-{
-  public ExtendedCommand(String syntax, String arguments, String node)
-  {
-    super(syntax, arguments, node);
-  }
+public abstract class ExtendedCommand extends Command {
 
-  public ExtendedCommand(String pluginName, String syntax, String arguments, String node)
-  {
-    super(pluginName, syntax, arguments, node);
-  }
-
-  public abstract void execute(String[] paramArrayOfString, CommandSender paramCommandSender);
-
-  public void run(String[] args, CommandSender sender) {
-    if (!super.hasRights(sender)) {
-      ChatUtils.printError(sender, this.pluginName, "You are not allowed to use this command!");
-      return;
+    public ExtendedCommand(String syntax, String arguments, String node) {
+        super(syntax, arguments, node);
     }
 
-    if (!hasCorrectSyntax(args)) {
-      ChatUtils.printInfo(sender, this.pluginName, ChatColor.GRAY, getHelpMessage());
-      return;
+    public ExtendedCommand(String pluginName, String syntax, String arguments, String node) {
+        super(pluginName, syntax, arguments, node);
     }
 
-    execute(args, sender);
-  }
+    public abstract void execute(String[] paramArrayOfString, CommandSender paramCommandSender);
 
-  protected boolean hasCorrectSyntax(String[] args)
-  {
-    return args.length >= super.getArgumentCount();
-  }
+    public void run(String[] args, CommandSender sender) {
+        if (!super.hasRights(sender)) {
+            ChatUtils.printError(sender, this.pluginName, "You are not allowed to use this command!");
+            return;
+        }
+
+        if (!hasCorrectSyntax(args)) {
+            ChatUtils.printInfo(sender, this.pluginName, ChatColor.GRAY, getHelpMessage());
+            return;
+        }
+
+        execute(args, sender);
+    }
+
+    protected boolean hasCorrectSyntax(String[] args) {
+        return args.length >= super.getArgumentCount();
+    }
 }

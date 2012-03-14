@@ -1,36 +1,33 @@
 package com.bukkit.gemo.FalseBook.Values;
 
-public class ValueFloat
-{
-  private String name;
-  private float value;
+public class ValueFloat {
 
-  public ValueFloat(String name, float value)
-  {
-    this.name = name;
-    this.value = value;
-  }
-  
-  public ValueFloat(Integer name, float value)
-  {
-	this.name = name.toString();
-    this.value = value;
-  }
+    private String name;
+    private float value;
 
-  public String getName() {
-    return this.name;
-  }
+    public ValueFloat(String name, float value) {
+        this.name = name;
+        this.value = value;
+    }
 
-  public float getValue() {
-    return this.value;
-  }
+    public ValueFloat(Integer name, float value) {
+        this.name = name.toString();
+        this.value = value;
+    }
 
-  public void setValue(float value) {
-    this.value = value;
-  }
+    public String getName() {
+        return this.name;
+    }
 
-  public String toString()
-  {
-    return String.valueOf(this.value);
-  }
+    public float getValue() {
+        return this.value;
+    }
+
+    public void setValue(float value) {
+        this.value = value;
+    }
+
+    public String toString() {
+        return String.valueOf(this.value);
+    }
 }

@@ -7,17 +7,18 @@ import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class FalseBookCorePlayerListener
-  implements Listener
-{
-  @EventHandler
-  public void onPlayerKick(PlayerKickEvent event)
-  {
-    if (event.isCancelled())
-      return;
-    FBPermissionHandler.removePlayer(event.getPlayer());
-  }
-  @EventHandler
-  public void onPlayerQuit(PlayerQuitEvent event) {
-    FBPermissionHandler.removePlayer(event.getPlayer());
-  }
+        implements Listener {
+
+    @EventHandler
+    public void onPlayerKick(PlayerKickEvent event) {
+        if (event.isCancelled()) {
+            return;
+        }
+        FBPermissionHandler.removePlayer(event.getPlayer());
+    }
+
+    @EventHandler
+    public void onPlayerQuit(PlayerQuitEvent event) {
+        FBPermissionHandler.removePlayer(event.getPlayer());
+    }
 }

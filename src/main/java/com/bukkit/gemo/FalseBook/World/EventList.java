@@ -19,77 +19,59 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
 
-public class EventList
-{
-  public void onBlockBreak(BlockBreakEvent event)
-  {
-  }
+public class EventList {
 
-  public void onBlockDamage(BlockDamageEvent event)
-  {
-  }
+    public void onBlockBreak(BlockBreakEvent event) {
+    }
 
-  public void onBlockPhysics(BlockPhysicsEvent event)
-  {
-  }
+    public void onBlockDamage(BlockDamageEvent event) {
+    }
 
-  public void onBlockPlace(BlockPlaceEvent event)
-  {
-  }
+    public void onBlockPhysics(BlockPhysicsEvent event) {
+    }
 
-  public void onPistonExtend(BlockPistonExtendEvent event)
-  {
-  }
+    public void onBlockPlace(BlockPlaceEvent event) {
+    }
 
-  public void onPistonRetract(BlockPistonRetractEvent event)
-  {
-  }
+    public void onPistonExtend(BlockPistonExtendEvent event) {
+    }
 
-  public void onRedstoneChange(BlockRedstoneEvent event)
-  {
-  }
+    public void onPistonRetract(BlockPistonRetractEvent event) {
+    }
 
-  public void onSignChange(SignChangeEvent event)
-  {
-  }
+    public void onRedstoneChange(BlockRedstoneEvent event) {
+    }
 
-  public void onPlayerChat(PlayerChatEvent event)
-  {
-  }
+    public void onSignChange(SignChangeEvent event) {
+    }
 
-  public void onPlayerInteract(PlayerInteractEvent event)
-  {
-  }
+    public void onPlayerChat(PlayerChatEvent event) {
+    }
 
-  public void onPlayerInteractEntity(PlayerInteractEntityEvent event)
-  {
-  }
+    public void onPlayerInteract(PlayerInteractEvent event) {
+    }
 
-  public void onPlayerJoin(PlayerJoinEvent event)
-  {
-  }
+    public void onPlayerInteractEntity(PlayerInteractEntityEvent event) {
+    }
 
-  public void onPlayerKick(PlayerKickEvent event)
-  {
-  }
+    public void onPlayerJoin(PlayerJoinEvent event) {
+    }
 
-  public void onPlayerQuit(PlayerQuitEvent event)
-  {
-  }
+    public void onPlayerKick(PlayerKickEvent event) {
+    }
 
-  public void onPlayerRespawn(PlayerRespawnEvent event)
-  {
-  }
+    public void onPlayerQuit(PlayerQuitEvent event) {
+    }
 
-  public void onPlayerTeleport(PlayerTeleportEvent event)
-  {
-  }
+    public void onPlayerRespawn(PlayerRespawnEvent event) {
+    }
 
-  public void onEntityChangeBlock(EntityChangeBlockEvent event)
-  {
-  }
+    public void onPlayerTeleport(PlayerTeleportEvent event) {
+    }
 
-  public void onEntityExplode(EntityExplodeEvent event)
-  {
-  }
+    public void onEntityChangeBlock(EntityChangeBlockEvent event) {
+    }
+
+    public void onEntityExplode(EntityExplodeEvent event) {
+    }
 }

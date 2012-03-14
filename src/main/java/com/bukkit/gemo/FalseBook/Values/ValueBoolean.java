@@ -1,36 +1,33 @@
 package com.bukkit.gemo.FalseBook.Values;
 
-public class ValueBoolean
-{
-  private String name;
-  private boolean value;
+public class ValueBoolean {
 
-  public ValueBoolean(String name, boolean value)
-  {
-    this.name = name;
-    this.value = value;
-  }
-  
-  public ValueBoolean(Integer name, boolean value)
-  {
-    this.name = name.toString();
-    this.value = value;
-  }
+    private String name;
+    private boolean value;
 
-  public String getName() {
-    return this.name;
-  }
+    public ValueBoolean(String name, boolean value) {
+        this.name = name;
+        this.value = value;
+    }
 
-  public boolean getValue() {
-    return this.value;
-  }
+    public ValueBoolean(Integer name, boolean value) {
+        this.name = name.toString();
+        this.value = value;
+    }
 
-  public void setValue(boolean value) {
-    this.value = value;
-  }
+    public String getName() {
+        return this.name;
+    }
 
-  public String toString()
-  {
-    return String.valueOf(this.value);
-  }
+    public boolean getValue() {
+        return this.value;
+    }
+
+    public void setValue(boolean value) {
+        this.value = value;
+    }
+
+    public String toString() {
+        return String.valueOf(this.value);
+    }
 }

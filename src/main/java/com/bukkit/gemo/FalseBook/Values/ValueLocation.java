@@ -3,37 +3,34 @@ package com.bukkit.gemo.FalseBook.Values;
 import com.bukkit.gemo.utils.BlockUtils;
 import org.bukkit.Location;
 
-public class ValueLocation
-{
-  private String name;
-  private Location value;
+public class ValueLocation {
 
-  public ValueLocation(String name, Location value)
-  {
-    this.name = name;
-    this.value = value;
-  }
-  
-  public ValueLocation(Integer name, Location value)
-  {
-    this.name = name.toString();
-    this.value = value;
-  }
+    private String name;
+    private Location value;
 
-  public String getName() {
-    return this.name;
-  }
+    public ValueLocation(String name, Location value) {
+        this.name = name;
+        this.value = value;
+    }
 
-  public Location getValue() {
-    return this.value;
-  }
+    public ValueLocation(Integer name, Location value) {
+        this.name = name.toString();
+        this.value = value;
+    }
 
-  public void setValue(Location value) {
-    this.value = value;
-  }
+    public String getName() {
+        return this.name;
+    }
 
-  public String toString()
-  {
-    return BlockUtils.LocationToString(this.value);
-  }
+    public Location getValue() {
+        return this.value;
+    }
+
+    public void setValue(Location value) {
+        this.value = value;
+    }
+
+    public String toString() {
+        return BlockUtils.LocationToString(this.value);
+    }
 }

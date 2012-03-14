@@ -5,36 +5,35 @@ import java.io.File;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 
-public class FBWorld extends EventList
-{
-  private String worldName;
-  private World bukkitWorld;
-  private WorldSettings settings;
+public class FBWorld extends EventList {
 
-  public FBWorld(String worldName)
-  {
-    this.worldName = worldName;
-    this.bukkitWorld = Bukkit.getWorld(worldName);
-    this.settings = new WorldSettings();
-  }
+    private String worldName;
+    private World bukkitWorld;
+    private WorldSettings settings;
 
-  public World getBukkitWorld() {
-    return this.bukkitWorld;
-  }
+    public FBWorld(String worldName) {
+        this.worldName = worldName;
+        this.bukkitWorld = Bukkit.getWorld(worldName);
+        this.settings = new WorldSettings();
+    }
 
-  public boolean hasBukkitWorld() {
-    return getBukkitWorld() != null;
-  }
+    public World getBukkitWorld() {
+        return this.bukkitWorld;
+    }
 
-  public String getWorldName() {
-    return this.worldName;
-  }
+    public boolean hasBukkitWorld() {
+        return getBukkitWorld() != null;
+    }
 
-  public boolean saveSettings(File dataFolder, String fileName) {
-    return this.settings.save(dataFolder, fileName);
-  }
+    public String getWorldName() {
+        return this.worldName;
+    }
 
-  public WorldSettings getSettings() {
-    return this.settings;
-  }
+    public boolean saveSettings(File dataFolder, String fileName) {
+        return this.settings.save(dataFolder, fileName);
+    }
+
+    public WorldSettings getSettings() {
+        return this.settings;
+    }
 }

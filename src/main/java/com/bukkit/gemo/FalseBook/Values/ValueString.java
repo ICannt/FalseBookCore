@@ -1,36 +1,33 @@
 package com.bukkit.gemo.FalseBook.Values;
 
-public class ValueString
-{
-  private String name;
-  private String value;
+public class ValueString {
 
-  public ValueString(String name, String value)
-  {
-    this.name = name;
-    this.value = value;
-  }
-  
-  public ValueString(Integer name, String value)
-  {
-    this.name = name.toString();
-    this.value = value;
-  }
+    private String name;
+    private String value;
 
-  public String getName() {
-    return this.name;
-  }
+    public ValueString(String name, String value) {
+        this.name = name;
+        this.value = value;
+    }
 
-  public String getValue() {
-    return this.value;
-  }
+    public ValueString(Integer name, String value) {
+        this.name = name.toString();
+        this.value = value;
+    }
 
-  public void setValue(String value) {
-    this.value = value;
-  }
+    public String getName() {
+        return this.name;
+    }
 
-  public String toString()
-  {
-    return String.valueOf(this.value);
-  }
+    public String getValue() {
+        return this.value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public String toString() {
+        return String.valueOf(this.value);
+    }
 }

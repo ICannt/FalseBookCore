@@ -18,82 +18,63 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
 
-public class MechanicListener
-{
-  public void onLoad()
-  {
-  }
+public class MechanicListener {
 
-  public void onUnload()
-  {
-  }
+    public void onLoad() {
+    }
 
-  public void reloadMechanic()
-  {
-  }
+    public void onUnload() {
+    }
 
-  public void onCommand(CommandSender sender, Command command, String label, String[] args)
-  {
-  }
+    public void reloadMechanic() {
+    }
 
-  public boolean isActivatedByRedstone(Block block, BlockRedstoneEvent event)
-  {
-    return false;
-  }
+    public void onCommand(CommandSender sender, Command command, String label, String[] args) {
+    }
 
-  public void onBlockBreak(BlockBreakEvent event)
-  {
-  }
+    public boolean isActivatedByRedstone(Block block, BlockRedstoneEvent event) {
+        return false;
+    }
 
-  public void onBlockPlace(BlockPlaceEvent event)
-  {
-  }
+    public void onBlockBreak(BlockBreakEvent event) {
+    }
 
-  public void onBlockRedstoneChange(BlockRedstoneEvent event)
-  {
-  }
+    public void onBlockPlace(BlockPlaceEvent event) {
+    }
 
-  public void onBlockPistonExtend(BlockPistonExtendEvent event)
-  {
-  }
+    public void onBlockRedstoneChange(BlockRedstoneEvent event) {
+    }
 
-  public void onBlockPistonRetract(BlockPistonRetractEvent event)
-  {
-  }
+    public void onBlockPistonExtend(BlockPistonExtendEvent event) {
+    }
 
-  public void onSignChange(SignChangeEvent event)
-  {
-  }
+    public void onBlockPistonRetract(BlockPistonRetractEvent event) {
+    }
 
-  public void onPlayerInteract(PlayerInteractEvent event, boolean isWallSign, boolean isSignPost)
-  {
-  }
+    public void onSignChange(SignChangeEvent event) {
+    }
 
-  public void onPlayerPreLogin(PlayerPreLoginEvent event)
-  {
-  }
+    public void onPlayerInteract(PlayerInteractEvent event, boolean isWallSign, boolean isSignPost) {
+    }
 
-  public void onPlayerLogin(PlayerLoginEvent event)
-  {
-  }
+    public void onPlayerPreLogin(PlayerPreLoginEvent event) {
+    }
 
-  public void onPlayerQuit(PlayerQuitEvent event)
-  {
-  }
+    public void onPlayerLogin(PlayerLoginEvent event) {
+    }
 
-  public void onPlayerTeleport(PlayerTeleportEvent event)
-  {
-  }
+    public void onPlayerQuit(PlayerQuitEvent event) {
+    }
 
-  public void onPlayerRespawn(PlayerRespawnEvent event)
-  {
-  }
+    public void onPlayerTeleport(PlayerTeleportEvent event) {
+    }
 
-  public void onEntityExplode(EntityExplodeEvent event)
-  {
-  }
+    public void onPlayerRespawn(PlayerRespawnEvent event) {
+    }
 
-  public void onEntityChangeBlock(EntityChangeBlockEvent event)
-  {
-  }
+    public void onEntityExplode(EntityExplodeEvent event) {
+    }
+
+    public void onEntityChangeBlock(EntityChangeBlockEvent event) {
+    }
 }
