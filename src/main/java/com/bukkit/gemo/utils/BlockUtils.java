@@ -684,22 +684,31 @@ public class BlockUtils {
     }
 
     public static boolean isPowered(Location location) {
-        if (getRawTypeID(location) == Material.REDSTONE_WIRE.getId()) {
-            return getRawSubID(location) > 0;
+        Block block = location.getBlock();
+        
+        int typeid = block.getTypeId();
+        byte subId = block.getData();
+        
+        if (typeid == Material.REDSTONE_WIRE.getId()) {
+            return subId > 0;
         }
 
         if (getRawTypeID(location) == Material.LEVER.getId()) {
-            return getRawSubID(location) > 8;
+            return subId > 8;
         }
 
         if ((getRawTypeID(location) == Material.WOOD_PLATE.getId()) || (getRawTypeID(location) == Material.STONE_PLATE.getId())) {
-            return getRawSubID(location) > 0;
+            return subId > 0;
         }
 
         if (getRawTypeID(location) == Material.DIODE_BLOCK_ON.getId()) {
             return true;
         }
 
-        return getRawTypeID(location) == Material.REDSTONE_TORCH_ON.getId();
+        if (getRawTypeID(location) == Material.REDSTONE_TORCH_ON.getId()) {
+            return true;
+        }
+        
+        return isBlockPowered(block);
     }
 }
